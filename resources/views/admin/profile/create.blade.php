@@ -1,3 +1,6 @@
+@extends('layouts.profile')
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,6 +11,6 @@
         <title>Profile</title>
     </head>
     <body>
-        <h1>Myプロフィール作成画面</h1>
+        <h1>Myプロフィール</h1>
     </body>
 </html>
