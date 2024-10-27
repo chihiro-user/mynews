@@ -25,11 +25,11 @@ Route::controller(NewsController::class)->prefix('admin')->group(function() {
 //Laravei09 課題4
 use App\Http\Controllers\Admin\ProfileController;
 Route::controller(ProfileController::class)->group(function() {
-    Route::get('admin/profile/create', 'add');
+    Route::get('admin/profile/create', 'add')->middleware('auth');
 });
 
 Route::controller(ProfileController::class)->group(function() {
-    Route::get('admin/profile/edit', 'edit');
+    Route::get('admin/profile/edit', 'edit')->middleware('auth');
 });
 Auth::routes();
 
